@@ -30,16 +30,16 @@ MOVER Studio specializes in creating ultra-fast, secure, and SEO-optimized stati
 ├── favicon.svg                  # Site favicon
 ├── og-image.svg                 # Open Graph image
 ├── google1696f5ddf2ed4e35.html   # Google verification
-└── _headers                     # Cloudflare Pages security headers
+└── _headers                     # Security headers
 ```
 
 ## 🛠️ Technology Stack
 
 - **Frontend**: Pure HTML5 + CSS3 + JavaScript (no frameworks)
 - **Performance**: 100/100 PageSpeed, <1s load times
-- **Security**: Advanced headers via Cloudflare Pages
+- **Security**: Advanced headers
 - **SEO**: Schema.org structured data, Open Graph, Twitter Cards
-- **Hosting**: Cloudflare Pages (free, global CDN, SSL)
+- **Hosting**: Professional hosting (global CDN, SSL)
 - **Deployment**: Git-based with automatic builds
 
 ## 📊 Pricing (EUR + BGN)
@@ -68,7 +68,6 @@ MOVER Studio specializes in creating ultra-fast, secure, and SEO-optimized stati
 ### Prerequisites
 - Node.js 18+ (for local development)
 - Git
-- Cloudflare account
 
 ### Local Development
 ```bash
@@ -81,13 +80,7 @@ git push origin main
 ```
 
 ### Automatic Deployment
-Changes pushed to `main` branch automatically deploy via Cloudflare Pages.
-
-### Cloudflare Configuration
-- **Always HTTPS**: Enabled
-- **Auto Minify**: HTML, CSS, JS
-- **Brotli Compression**: Enabled
-- **Security Headers**: Via `_headers` file
+Changes pushed to `main` branch automatically deploy.
 
 ## 📈 SEO Strategy
 

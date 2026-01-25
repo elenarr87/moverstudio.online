@@ -1,5 +1,5 @@
 /*
-  # Security Headers for Cloudflare Pages
+  # Security Headers
   # These headers provide advanced security without HTML meta tags
 
   # Content Security Policy - XSS protection
