@@ -367,6 +367,41 @@
       font-size: 0.95rem;
     }
 
+    .pricing-explanation {
+      background: var(--matrix-dark);
+      padding: 1.5rem;
+      border-left: 5px solid var(--matrix-green);
+      margin: 2rem 0;
+      border-radius: var(--radius);
+      border: 2px solid var(--matrix-green-dim);
+    }
+
+    .pricing-explanation h3 {
+      color: var(--matrix-green-bright);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .pricing-explanation ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .pricing-explanation li {
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      color: var(--text-primary);
+    }
+
+    .pricing-explanation li::before {
+      content: '>';
+      position: absolute;
+      left: 0;
+      color: var(--matrix-green-bright);
+      font-weight: bold;
+    }
+
     footer {
       background: var(--matrix-dark);
       padding: 3rem 1rem;
@@ -487,6 +522,15 @@
           <div class="price">400 €<span class="bg-price"> (~782 лв)</span></div>
           <p>Комплексна SEO доминация с multi-location</p>
         </div>
+      </div>
+
+      <div class="pricing-explanation">
+        <h3>Защо различни цени?</h3>
+        <ul>
+          <li><strong>Keyword cannibalization:</strong> Премахване на конкуриращи се ключови думи</li>
+          <li><strong>Conflicting titles:</strong> Оптимизация на title и meta descriptions</li>
+          <li><strong>Internal link fixes:</strong> Подобряване на link juice flow</li>
+        </ul>
       </div>
 
       <p>
