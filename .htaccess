@@ -51,6 +51,9 @@ RewriteRule ^ https://moverstudio.online%{REQUEST_URI} [L,R=301]
   
   # DNS Prefetch
   [cite_start]Header set X-DNS-Prefetch-Control "on" [cite: 4]
+
+  # LLMs.txt header for AI discovery
+  Header set X-LLMS-TXT "/llms-full.txt"
 </IfModule> 
 
 # ----------------------------------------
@@ -94,6 +97,14 @@ RewriteRule ^ https://moverstudio.online%{REQUEST_URI} [L,R=301]
   [cite_start]ExpiresByType image/webp "access plus 1 year" [cite: 6]
   [cite_start]ExpiresByType image/x-icon "access plus 1 year" [cite: 6]
 </IfModule> [cite: 6]
+
+# ----------------------------------------
+# LLMs.txt File Configuration
+# ----------------------------------------
+<Files "llms-full.txt">
+    ForceType text/plain
+    Header set Cache-Control "public, max-age=3600"
+</Files>
 
 # ----------------------------------------
 # 8. ETag (използваме само Expires за по-бърз PageSpeed)

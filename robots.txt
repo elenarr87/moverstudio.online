@@ -63,3 +63,9 @@ Sitemap: https://moverstudio.online/sitemap.xml
 # LLMs.txt for AI context
 # https://llmstxt.org/
 # See: https://moverstudio.online/llms.txt
+
+# AI Agent Testing Page
+Allow: /ai-test.html
+
+# FAQ Page
+Allow: /faq.html
