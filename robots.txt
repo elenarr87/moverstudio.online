@@ -10,52 +10,90 @@ User-agent: GPTBot
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /llms-faq.txt
 
 User-agent: Google-Extended
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /llms-faq.txt
 
 User-agent: anthropic-ai
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /llms-faq.txt
 
 User-agent: ClaudeBot
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /llms-faq.txt
 
 User-agent: ChatGPT-User
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /llms-faq.txt
 
 User-agent: PerplexityBot
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /llms-faq.txt
 
 User-agent: Bytespider
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /llms-faq.txt
 
 User-agent: cohere-ai
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /llms-faq.txt
 
 # Common Crawl и Apple Intelligence
 User-agent: CCBot
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /llms-faq.txt
 
 User-agent: Applebot-Extended
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /llms-faq.txt
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-faq.txt
+
+# Amazon Alexa / Anthropic Bedrock
+User-agent: Amazonbot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-faq.txt
+
+# YouBot (You.com AI search)
+User-agent: YouBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-faq.txt
+
+# Diffbot (AI data extraction)
+User-agent: Diffbot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-faq.txt
 
 # Sitemap location
 Sitemap: https://moverstudio.online/sitemap.xml
@@ -63,9 +101,3 @@ Sitemap: https://moverstudio.online/sitemap.xml
 # LLMs.txt for AI context
 # https://llmstxt.org/
 # See: https://moverstudio.online/llms.txt
-
-# AI Agent Testing Page
-Allow: /ai-test.html
-
-# FAQ Page
-Allow: /faq.html
