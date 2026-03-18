@@ -644,6 +644,13 @@
 
 <main id="main">
   
+  <!-- BREADCRUMB NAVIGATION -->
+  <nav aria-label="Breadcrumb" style="padding: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+    <a href="/">Начало</a> <span style="margin: 0 0.5rem;">›</span>
+    <a href="/izrabotka-na-sait.html">Услуги</a> <span style="margin: 0 0.5rem;">›</span>
+    <span style="color: var(--matrix-green-bright);">Корпоративен Сайт</span>
+  </nav>
+
   <!-- HERO SECTION -->
   <section class="hero">
     <h1>Изработка на Корпоративен Сайт за Бизнес</h1>
@@ -789,6 +796,14 @@
         <strong>Годишни разходи:</strong> 23-48€ за домейн и хостинг (същите като визитка).
       </p>
       <a href="/calculator.html" class="cta-primary" style="margin-top: 2rem;">Изчисли точна цена →</a>
+      
+      <div id="share-section" style="margin-top: 2rem; padding: 1rem; background: rgba(0, 255, 65, 0.05); border-left: 3px solid #00ff41;">
+        <p style="margin: 0.5rem 0; font-size: 0.95rem;">
+          <strong>Сподели с екип:</strong>
+          <a href="#" id="share-corp-link" style="margin-left: 0.5rem; padding: 0.3rem 0.8rem; background: #00ff41; color: #0a0a0a; border-radius: 3px; text-decoration: none; font-size: 0.9rem; display: inline-block;">Копирай линк</a>
+          <span id="share-corp-feedback" style="margin-left: 0.5rem; font-size: 0.9rem;"></span>
+        </p>
+      </div>
     </div>
   </section>
 
@@ -892,6 +907,43 @@
     </p>
   </section>
 
+  <!-- HTML vs WordPress Comparison -->
+  <section>
+    <h2>Корпоративен HTML Сайт vs WordPress</h2>
+    <table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
+      <tr style="background: #0a0a0a; border: 2px solid #00ff41;">
+        <th style="padding: 1rem; text-align: left; color: #00ff41;">Характеристика</th>
+        <th style="padding: 1rem; text-align: center; color: #00ff41;">HTML</th>
+        <th style="padding: 1rem; text-align: center; color: #00ff41;">WordPress</th>
+      </tr>
+      <tr style="border-bottom: 1px solid #00aa2b;">
+        <td style="padding: 1rem;">Скорост зареждане</td>
+        <td style="padding: 1rem; text-align: center; color: #39ff14;">Под 1 сек</td>
+        <td style="padding: 1rem; text-align: center; color: #8fbc8f;">3-7 сек</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #00aa2b;">
+        <td style="padding: 1rem;">PageSpeed Score</td>
+        <td style="padding: 1rem; text-align: center; color: #39ff14;">95-100</td>
+        <td style="padding: 1rem; text-align: center; color: #8fbc8f;">50-70</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #00aa2b;">
+        <td style="padding: 1rem;">Годишни разходи</td>
+        <td style="padding: 1rem; text-align: center; color: #39ff14;">23-48€</td>
+        <td style="padding: 1rem; text-align: center; color: #8fbc8f;">548-1850€</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #00aa2b;">
+        <td style="padding: 1rem;">Сигурност</td>
+        <td style="padding: 1rem; text-align: center; color: #39ff14;">Минимална</td>
+        <td style="padding: 1rem; text-align: center; color: #8fbc8f;">Висок риск</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #00aa2b;">
+        <td style="padding: 1rem;">Месечна поддръжка</td>
+        <td style="padding: 1rem; text-align: center; color: #39ff14;">0€</td>
+        <td style="padding: 1rem; text-align: center; color: #8fbc8f;">50-200€</td>
+      </tr>
+    </table>
+  </section>
+
   <!-- FAQ -->
   <section>
     <h2>Често задавани въпроси</h2>
@@ -982,6 +1034,30 @@
     <a href="https://moverstudio.online/llms-full.txt">AI Documentation (llms-full.txt)</a>
   </p>
 </footer>
+
+<script>
+  // Share functionality for korporativen-sait
+  const shareCorpLink = document.getElementById('share-corp-link');
+  const shareCorpFeedback = document.getElementById('share-corp-feedback');
+  
+  if (shareCorpLink) {
+    shareCorpLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      const url = window.location.href;
+      
+      navigator.clipboard.writeText(url).then(function() {
+        shareCorpFeedback.textContent = '✓ Линкът е копиран в буфера.';
+        shareCorpFeedback.style.color = '#00ff41';
+        setTimeout(function() {
+          shareCorpFeedback.textContent = '';
+        }, 3000);
+      }).catch(function() {
+        shareCorpFeedback.textContent = 'Копирай ръчно адреса от браузъра.';
+        shareCorpFeedback.style.color = '#ff4444';
+      });
+    });
+  }
+</script>
 
 </body>
 </html>

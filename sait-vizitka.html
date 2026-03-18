@@ -612,6 +612,13 @@
 
 <main id="main">
   
+  <!-- BREADCRUMB NAVIGATION -->
+  <nav aria-label="Breadcrumb" style="padding: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+    <a href="/">Начало</a> <span style="margin: 0 0.5rem;">›</span>
+    <a href="/izrabotka-na-sait.html">Услуги</a> <span style="margin: 0 0.5rem;">›</span>
+    <span style="color: var(--matrix-green-bright);">Сайт Визитка</span>
+  </nav>
+
   <!-- HERO SECTION -->
   <section class="hero">
     <h1>Изработка на Сайт Визитка за Малък Бизнес</h1>
@@ -758,6 +765,14 @@
         или .COM (17€/год) + хостинг (18€/год) = 35€ total.
       </p>
       <a href="/calculator.html" class="cta-primary" style="margin-top: 2rem;">Изчисли точна цена →</a>
+      
+      <div id="share-section-vizitka" style="margin-top: 2rem; padding: 1rem; background: rgba(0, 255, 65, 0.05); border-left: 3px solid #00ff41;">
+        <p style="margin: 0.5rem 0; font-size: 0.95rem;">
+          <strong>Сподели с приятел:</strong>
+          <a href="#" id="share-vizitka-link" style="margin-left: 0.5rem; padding: 0.3rem 0.8rem; background: #00ff41; color: #0a0a0a; border-radius: 3px; text-decoration: none; font-size: 0.9rem; display: inline-block;">Копирай линк</a>
+          <span id="share-vizitka-feedback" style="margin-left: 0.5rem; font-size: 0.9rem;"></span>
+        </p>
+      </div>
     </div>
   </section>
 
@@ -787,6 +802,43 @@
       <strong>За по-сложни нужди:</strong> Виж <a href="/izrabotka-na-sait.html">изработка на сайт</a> 
       за пълен преглед на всички опции.
     </p>
+  </section>
+
+  <!-- HTML vs WordPress Comparison -->
+  <section>
+    <h2>Сайт Визитка HTML vs WordPress</h2>
+    <table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
+      <tr style="background: #0a0a0a; border: 2px solid #00ff41;">
+        <th style="padding: 1rem; text-align: left; color: #00ff41;">Характеристика</th>
+        <th style="padding: 1rem; text-align: center; color: #00ff41;">HTML</th>
+        <th style="padding: 1rem; text-align: center; color: #00ff41;">WordPress</th>
+      </tr>
+      <tr style="border-bottom: 1px solid #00aa2b;">
+        <td style="padding: 1rem;">Цена на изработка</td>
+        <td style="padding: 1rem; text-align: center; color: #39ff14;">400€</td>
+        <td style="padding: 1rem; text-align: center; color: #8fbc8f;">800-1500€</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #00aa2b;">
+        <td style="padding: 1rem;">Годишни разходи</td>
+        <td style="padding: 1rem; text-align: center; color: #39ff14;">23-48€</td>
+        <td style="padding: 1rem; text-align: center; color: #8fbc8f;">548-1850€</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #00aa2b;">
+        <td style="padding: 1rem;">PageSpeed</td>
+        <td style="padding: 1rem; text-align: center; color: #39ff14;">95-100</td>
+        <td style="padding: 1rem; text-align: center; color: #8fbc8f;">50-70</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #00aa2b;">
+        <td style="padding: 1rem;">Месечна поддръжка</td>
+        <td style="padding: 1rem; text-align: center; color: #39ff14;">0€</td>
+        <td style="padding: 1rem; text-align: center; color: #8fbc8f;">50-150€</td>
+      </tr>
+      <tr>
+        <td style="padding: 1rem;">Сигурност</td>
+        <td style="padding: 1rem; text-align: center; color: #39ff14;">Перфектна</td>
+        <td style="padding: 1rem; text-align: center; color: #8fbc8f;">Уязвима</td>
+      </tr>
+    </table>
   </section>
 
   <!-- FAQ -->
@@ -844,6 +896,30 @@
     <a href="https://moverstudio.online/llms-full.txt">AI Documentation (llms-full.txt)</a>
   </p>
 </footer>
+
+<script>
+  // Share functionality for sait-vizitka
+  const shareVizitkaLink = document.getElementById('share-vizitka-link');
+  const shareVizitkaFeedback = document.getElementById('share-vizitka-feedback');
+  
+  if (shareVizitkaLink) {
+    shareVizitkaLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      const url = window.location.href;
+      
+      navigator.clipboard.writeText(url).then(function() {
+        shareVizitkaFeedback.textContent = '✓ Линкът е копиран в буфера.';
+        shareVizitkaFeedback.style.color = '#00ff41';
+        setTimeout(function() {
+          shareVizitkaFeedback.textContent = '';
+        }, 3000);
+      }).catch(function() {
+        shareVizitkaFeedback.textContent = 'Копирай ръчно адреса от браузъра.';
+        shareVizitkaFeedback.style.color = '#ff4444';
+      });
+    });
+  }
+</script>
 
 </body>
 </html>
