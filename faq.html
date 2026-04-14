@@ -40,16 +40,16 @@
     "@type": "FAQPage",
     "mainEntity": [
       {"@type":"Question","name":"Защо цената е еднократна, а не месечна?","acceptedAnswer":{"@type":"Answer","text":"Защото доставяме актив — код, който ти принадлежи изцяло. Плащаш веднъж. Годишни разходи: HTML+.COM = 35€/год. WordPress: 548–1850€/год."}},
-      {"@type":"Question","name":"Какво получавам в пакета от 400€?","acceptedAnswer":{"@type":"Answer","text":"1–5 страници, responsive дизайн, SEO on-page, Schema markup (4 типа), 100 PageSpeed гаранция, 30 дни безплатни корекции. Годишни разходи: 23–48€."}},
+      {"@type":"Question","name":"Какво получавам в пакета от 400€?","acceptedAnswer":{"@type":"Answer","text":"1–5 страници, responsive дизайн, SEO on-page, Schema markup (4 типа), цел за 100 PageSpeed при дефинирани условия, 30 дни безплатни корекции. Годишни разходи: 23–48€."}},
       {"@type":"Question","name":"Има ли скрити такси?","acceptedAnswer":{"@type":"Answer","text":"Не. Крайната цена е окончателна. Хостингът се плаща директно от теб на доставчика — без посредник."}},
       {"@type":"Question","name":"Издавате ли фактури с ДДС?","acceptedAnswer":{"@type":"Answer","text":"Не сме регистрирани по ДДС — цената е крайна без допълнителни 20% отгоре. Фирма: Транспортер Иван Иванов ЕООД."}},
       {"@type":"Question","name":"Предлагате ли отстъпки?","acceptedAnswer":{"@type":"Answer","text":"Да — 10% при препоръка на нов клиент или при поръчка на втори проект."}},
       {"@type":"Question","name":"Какво става при забава от ваша страна?","acceptedAnswer":{"@type":"Answer","text":"Автоматична компенсация от 5% от стойността на проекта за всеки просрочен ден."}},
       {"@type":"Question","name":"Защо HTML, а не WordPress?","acceptedAnswer":{"@type":"Answer","text":"1–5 HTTP заявки (срещу 30–80), 30–150KB (срещу 2–5MB), PageSpeed 95–100 (срещу 40–70), зареждане под 1 секунда (срещу 3–7)."}},
       {"@type":"Question","name":"Защо нямам достъп до CMS панел?","acceptedAnswer":{"@type":"Answer","text":"Умишлен избор. Управлявани ъпдейти в рамките на 24 часа с проверка на PageSpeed и SEO — без риск от грешки."}},
-      {"@type":"Question","name":"HTML сайтовете сигурни ли са?","acceptedAnswer":{"@type":"Answer","text":"99% имунни на хакове. Няма база данни, admin панел, PHP или плъгини. 90% от хаковете са върху WordPress."}},
+      {"@type":"Question","name":"HTML сайтовете сигурни ли са?","acceptedAnswer":{"@type":"Answer","text":"Имат по-нисък риск при правилна конфигурация. Няма публичен CMS панел, runtime база данни, PHP или плъгини. Това намалява повърхността за атака спрямо типични WordPress конфигурации."}},
       {"@type":"Question","name":"Кой притежава кода?","acceptedAnswer":{"@type":"Answer","text":"Ти — изцяло. Lifetime ownership е стандартна клауза. Нямаш vendor lock-in."}},
-      {"@type":"Question","name":"Включено ли е SEO?","acceptedAnswer":{"@type":"Answer","text":"Да — title, meta, H1–H6, Schema.org markup (4–6 типа), Open Graph, 100 PageSpeed. Разширено SEO: +100€ база."}},
+      {"@type":"Question","name":"Включено ли е SEO?","acceptedAnswer":{"@type":"Answer","text":"Да — базово on-page SEO е включено във всички пакети: title, meta, H1–H6, Schema.org markup (4–6 типа), Open Graph и mobile-first дизайн. Разширено SEO, keyword research и content стратегия се предлагат отделно."}},
       {"@type":"Question","name":"Колко отнема изработката?","acceptedAnswer":{"@type":"Answer","text":"Визитка: 3–5 работни дни. Корпоративен: 1–2 седмици. Custom: индивидуален timeline."}},
       {"@type":"Question","name":"WordPress не е ли безплатен?","acceptedAnswer":{"@type":"Answer","text":"WordPress.org е безплатен за изтегляне. Реалните разходи: 548–1850€/год. HTML: 23–48€/год."}}
     ]
@@ -77,7 +77,9 @@
         "https://clutch.co/profile/moverstudio",
         "https://www.sortlist.com/agency/moverstudio",
         "https://www.linkedin.com/in/ivanov-moverstudio",
-        "https://www.google.com/maps/place/MOVER+Studio+-+Изработка+на+HTML+сайтове+%26+SEO/@42.725411,25.5431784,502557m/data=!3m2!1e3!4b1!4m6!3m5!1s0x62f45cbc39443723:0x664d5ddfe7c8baef!8m2!3d42.725411!4d25.5431784!16s%2Fg%2F11yxs5tttk?entry=ttu&g_ep=EgoyMDI2MDIwOC4wIKXMDSoASAFQAw%3D%3D",
+        "https://medium.com/@vuichovanio1",
+        "https://github.com/vuichovanio1",
+        "https://www.google.com/maps/place/?q=place_id:ChIJLWL5nT4Nd0cR6zqKqY2e1qQ",
         "https://medium.com/@vuichovanio1/скритата-врата-защо-модерният-сайт-се-нуждае-от-llms-txt-243363a8a053",
         "https://medium.com/@vuichovanio1/доверието-в-ерата-на-синтетичното-съдържание-d1bedcf73ccb",
         "https://medium.com/@vuichovanio1/ефектът-50-първи-срещи-как-да-изградим-бранд-който-алгоритмите-и-хората-няма-да-забравят-807da3804125",
@@ -314,6 +316,81 @@
       .wp-table { font-size: 0.7rem; }
       .wp-table th, .wp-table td { padding: 0.4rem 0.5rem; }
     }
+  
+    /* Ultra subtle matrix override */
+    @keyframes matrixFlowUltra {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 0 200px;
+      }
+    }
+
+    html::before {
+      content: none !important;
+      display: none !important;
+    }
+
+    body::before {
+      content: "" !important;
+      position: fixed !important;
+      inset: 0 !important;
+      pointer-events: none !important;
+      z-index: -2 !important;
+      display: block !important;
+      opacity: 0.32 !important;
+      background-image: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 150, 0.035) 0px,
+        rgba(0, 255, 150, 0.035) 1px,
+        transparent 1px,
+        transparent 14px
+      ) !important;
+      animation: matrixFlowUltra 24s linear infinite !important;
+    }
+
+    body::after {
+      content: "" !important;
+      position: fixed !important;
+      inset: 0 !important;
+      pointer-events: none !important;
+      z-index: -1 !important;
+      display: block !important;
+      animation: none !important;
+      background: radial-gradient(
+        circle at center,
+        transparent 48%,
+        rgba(0, 0, 0, 0.52) 100%
+      ) !important;
+    }
+
+    @media (max-width: 768px) {
+      body::before {
+        opacity: 0.2 !important;
+        animation-duration: 48s !important;
+        background-image: repeating-linear-gradient(
+          to bottom,
+          rgba(0, 255, 150, 0.03) 0px,
+          rgba(0, 255, 150, 0.03) 1px,
+          transparent 1px,
+          transparent 18px
+        ) !important;
+      }
+    }
+
+    @media (min-width: 769px) {
+      body::before {
+        opacity: 0.32 !important;
+        animation-duration: 24s !important;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      body::before {
+        animation: none !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -356,7 +433,8 @@
     <details class="faq-item">
       <summary>Какво точно получавам в пакета от 400€ — Сайт Визитка?</summary>
       <div class="faq-answer">
-        1–5 страници · responsive mobile-first дизайн · SEO оптимизация on-page · Schema markup (4 типа) · 100 PageSpeed гаранция · 30 дни безплатни корекции след пускане.<br><br>
+        1–5 страници · responsive mobile-first дизайн · базово on-page SEO · Schema markup (4 типа) · цел за 100 PageSpeed при дефинирани условия · 30 дни безплатни корекции след пускане.<br><br>
+        Разширено SEO (keyword research, content стратегия, multi-location SEO) е отделна услуга: 100€ база + 20€/страница над 5.
         Годишни разходи след изработката: <strong>23–48€</strong> (домейн + хостинг — плащаш директно на доставчика, не на нас).
       </div>
     </details>
@@ -520,8 +598,8 @@
     <details class="faq-item">
       <summary>Включено ли е SEO в цената?</summary>
       <div class="faq-answer">
-        Да — базово on-page SEO е включено в <strong>всички пакети</strong>: title · meta · H1–H6 структура · Schema.org markup (4–6 типа) · Open Graph · mobile-first дизайн · 100 PageSpeed.<br><br>
-        Разширено SEO (keyword research + content стратегия): <strong>+100€ база, +20€/страница над 5.</strong>
+        Да — базово on-page SEO е включено в <strong>всички пакети</strong>: title · meta · H1–H6 структура · Schema.org markup (4–6 типа) · Open Graph · mobile-first дизайн и техническа подготовка.<br><br>
+        Разширено SEO (keyword research + content стратегия + multi-location SEO) се предлага отделно: <strong>100€ база, +20€/страница над 5.</strong>
       </div>
     </details>
 
@@ -593,8 +671,8 @@
     <details class="faq-item">
       <summary>HTML сайтовете имунни ли са на хакове?</summary>
       <div class="faq-answer">
-        <strong>99% имунни.</strong> Няма база данни за SQL injection · няма admin панел · няма PHP код · няма плъгини с уязвимости.<br><br>
-        Статистически: 90% от хаковете на сайтове са върху WordPress.
+        Имат <strong>по-нисък risk profile</strong> при правилна конфигурация: няма публичен CMS панел, runtime база данни, PHP код и плъгини.<br><br>
+        Практически това намалява повърхността за атака спрямо типични WordPress инсталации.
       </div>
     </details>
 
@@ -753,7 +831,7 @@
     <details class="faq-item">
       <summary>Може ли WordPress да стане бърз с кеширане?</summary>
       <div class="faq-answer">
-        Кеширането помага, но не решава основния проблем — архитектурата. С WP Rocket или подобни максимум стигаш PageSpeed 70–85. <strong>HTML постига 100 без никакви трикове.</strong>
+        Кеширането помага, но не решава изцяло архитектурния overhead. С WP Rocket или подобни често се стига PageSpeed 70–85. <strong>HTML по-лесно достига много високи резултати при чиста имплементация.</strong>
       </div>
     </details>
 
@@ -764,7 +842,7 @@
         · Membership сайтове с user login<br>
         · Магазини с реална количка и плащания<br>
         · Платформи с десетки автори и daily публикуване<br><br>
-        В тези случаи ще ти кажем директно. <strong>За всичко останало — HTML доминира.</strong>
+        В тези случаи ще ти кажем директно. <strong>За много останали случаи HTML е силно конкурентен избор.</strong>
       </div>
     </details>
   </section>

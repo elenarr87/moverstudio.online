@@ -161,6 +161,81 @@
       h1 { font-size: 1.2rem; }
       .terminal-block { padding: 1rem; font-size: 0.85rem; }
     }
+  
+    /* Ultra subtle matrix override */
+    @keyframes matrixFlowUltra {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 0 200px;
+      }
+    }
+
+    html::before {
+      content: none !important;
+      display: none !important;
+    }
+
+    body::before {
+      content: "" !important;
+      position: fixed !important;
+      inset: 0 !important;
+      pointer-events: none !important;
+      z-index: -2 !important;
+      display: block !important;
+      opacity: 0.32 !important;
+      background-image: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 150, 0.035) 0px,
+        rgba(0, 255, 150, 0.035) 1px,
+        transparent 1px,
+        transparent 14px
+      ) !important;
+      animation: matrixFlowUltra 24s linear infinite !important;
+    }
+
+    body::after {
+      content: "" !important;
+      position: fixed !important;
+      inset: 0 !important;
+      pointer-events: none !important;
+      z-index: -1 !important;
+      display: block !important;
+      animation: none !important;
+      background: radial-gradient(
+        circle at center,
+        transparent 48%,
+        rgba(0, 0, 0, 0.52) 100%
+      ) !important;
+    }
+
+    @media (max-width: 768px) {
+      body::before {
+        opacity: 0.2 !important;
+        animation-duration: 48s !important;
+        background-image: repeating-linear-gradient(
+          to bottom,
+          rgba(0, 255, 150, 0.03) 0px,
+          rgba(0, 255, 150, 0.03) 1px,
+          transparent 1px,
+          transparent 18px
+        ) !important;
+      }
+    }
+
+    @media (min-width: 769px) {
+      body::before {
+        opacity: 0.32 !important;
+        animation-duration: 24s !important;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      body::before {
+        animation: none !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -192,3 +267,4 @@
 
 </body>
 </html>
+
