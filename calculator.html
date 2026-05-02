@@ -9,6 +9,7 @@
 
   <!-- Performance Optimization: Theme color for mobile browsers (Matrix green) -->
   <meta name="theme-color" content="#00ff41">
+  <meta name="last-modified" content="2026-05-01">
 
   <link rel="llms-txt" href="/llms-full.txt">
   <link rel="alternate" type="text/plain" href="https://moverstudio.online/llms-faq.txt" title="llms-faq">
@@ -18,8 +19,8 @@
   <!-- Performance Optimization: No external resources - all inline for maximum speed -->
   <!-- Preload not needed as all CSS/JS is inline -->
 
-  <title>Калкулатор Цена на Сайт | От 400€ | MOVER Studio</title>
-  <meta name="description" content="Калкулирай цената на своя HTML сайт. От 400€ за визитка до 1500€ за custom проект. Без скрити такси, без WordPress. Прозрачно.">
+  <title>Калкулатор за сайт – изчисли цена за 30 секунди</title>
+  <meta name="description" content="Колко ще струва твоят сайт? Използвай калкулатора и получи ориентировъчна цена за секунди. Без регистрация.">
   <meta name="keywords" content="калкулатор сайт, цена изработка на сайт, колко струва сайт, html сайт цена, прозрачни цени">
   <link rel="canonical" href="https://moverstudio.online/calculator.html">
   <link rel="alternate" hreflang="bg" href="https://moverstudio.online/calculator.html">
@@ -31,8 +32,8 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Калкулатор за Изработка на Сайтове | MOVER Studio">
-  <meta property="og:description" content="Калкулирай цената на изработка на HTML сайт. Поръчай без скрити такси, без WordPress. От 400€ до 1500€.">
+  <meta property="og:title" content="Калкулатор за цена на сайт | Ориентир за 400€+ HTML проект | MOVER Studio">
+  <meta property="og:description" content="Изчисли цена за HTML сайт според обхват и функции. Ориентир от 400€ за визитка до 1500€ за custom проект с бърз път към поръчка.">
   <meta property="og:image" content="https://moverstudio.online/og-image.png?v=1">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -43,8 +44,8 @@
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Калкулатор | Изработка на HTML Сайтове">
-  <meta name="twitter:description" content="Калкулирай цената на изработка на HTML сайт. Поръчай статичен сайт без скрити такси.">
+  <meta name="twitter:title" content="Калкулатор за цена на сайт | Ориентир за 400€+ HTML проект | MOVER Studio">
+  <meta name="twitter:description" content="Изчисли цена за HTML сайт според обхват и функции. Ориентир от 400€ за визитка до 1500€ за custom проект с бърз път към поръчка.">
   <meta name="twitter:image" content="https://moverstudio.online/og-image.png?v=1">
   <meta name="twitter:site" content="@moverstudio_bg">
 
@@ -365,6 +366,37 @@
       margin: 0;
     }
 
+    .tco-strip {
+      margin-top: 1.5rem;
+      padding: 1.25rem;
+      border: 2px solid var(--matrix-green);
+      border-radius: var(--radius);
+      background: rgba(0, 255, 65, 0.08);
+    }
+
+    .tco-strip p {
+      margin: 0.4rem 0;
+      color: var(--text-primary);
+      max-width: 100%;
+    }
+
+    .decision-links {
+      background: var(--matrix-dark);
+      border: 2px solid var(--matrix-green-dim);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .decision-links ul {
+      margin: 0.8rem 0 0 1.25rem;
+    }
+
+    .decision-links li {
+      margin: 0.5rem 0;
+      color: var(--text-primary);
+    }
+
     footer {
       background: var(--matrix-dark);
       padding: 3rem 1rem;
@@ -508,17 +540,35 @@
         ]
       },
       {
+        "@type": "LocalBusiness",
+        "@id": "https://moverstudio.online/calculator.html#serviceareabusiness",
+        "name": "MOVER Studio - Калкулатор за сайтове България",
+        "description": "Изчисли цената за изработка на HTML сайт с локално SEO за цяла България. Работим с клиенти от София, Пловдив, Варна, Бургас.",
+        "url": "https://moverstudio.online/calculator.html",
+        "telephone": "+359877845569",
+        "email": "admin@moverstudio.online",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Костинброд",
+          "addressRegion": "София област",
+          "addressCountry": "BG"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "София", "containedInPlace": { "@type": "Country", "name": "България" } },
+          { "@type": "City", "name": "Пловдив", "containedInPlace": { "@type": "Country", "name": "България" } },
+          { "@type": "City", "name": "Варна", "containedInPlace": { "@type": "Country", "name": "България" } },
+          { "@type": "City", "name": "Бургас", "containedInPlace": { "@type": "Country", "name": "България" } }
+        ],
+        "serviceType": ["Калкулатор цена сайт", "SEO оптимизация", "Локално SEO"],
+        "priceRange": "400-1500 EUR",
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "sameAs": ["https://www.google.com/maps/place/?q=place_id:ChIJLWL5nT4Nd0cR6zqKqY2e1qQ"]
+      },
+      {
         "@type": "Service",
         "serviceType": "Изработка на HTML сайтове",
         "name": "Калкулатор за Изработка на HTML Сайтове",
         "description": "Калкулирай цената на изработка на HTML сайт. Поръчай статичен сайт без скрити такси.",
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "EUR",
-          "lowPrice": "400",
-          "highPrice": "1500",
-          "offerCount": "3"
-        },
         "provider": {
           "@id": "https://moverstudio.online/#organization"
         },
@@ -529,7 +579,7 @@
       },
       {
         "@type": "WebPage",
-        "name": "Калкулатор за Изработка на HTML Сайтове",
+        "name": "Калкулатор за Сайт с Ясна Цена и Следваща Стъпка",
         "description": "Калкулирай цената на изработка на HTML сайт. Поръчай статичен сайт без скрити такси.",
         "author": {
           "@id": "https://moverstudio.online/#organization"
@@ -620,44 +670,65 @@
     <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.9rem;">
       <a href="/index.html">Начало</a>
       <a href="/izrabotka-na-sait.html">Услуги</a>
+      <a href="/izrabotka-na-landing-page.html">Изработка на landing page</a>
+      <a href="/izrabotka-na-sait-sofia.html">Изработка на сайтове София</a>
       <a href="/calculator.html">Калкулатор</a>
       <a href="/dokazatelstva.html">Доказателства</a>
       <a href="/case-studies.html">Case Studies</a>
       <a href="/about.html">За Нас</a>
     </div>
+  <p style="margin-top: 1rem; font-size: 0.95rem;">
+    Услуги: <a href="/izrabotka-na-sait.html">Изработка на сайт</a> | 
+    <a href="/izrabotka-na-landing-page.html">Изработка на landing page</a> | 
+    <a href="/izrabotka-na-sait-sofia.html">Изработка на сайтове София</a> | 
+    <a href="/sait-vizitka.html">Сайт визитка</a> | 
+    <a href="/korporativen-sait.html">Корпоративен сайт</a> | 
+    <a href="/wordpress-alternativa.html">Алтернатива на WordPress</a> | 
+    <a href="/index.html">HTML сайт</a> | 
+    <a href="/pagespeed-100-html.html">Статичен сайт</a>
+  </p>
   </nav>
 </header>
 
 <main id="main">
 
-  <!-- BREADCRUMB NAVIGATION -->
-  <nav aria-label="Breadcrumb" style="padding: 1rem; font-size: 0.9rem; color: var(--text-muted);">
-    <a href="/">Начало</a> <span style="margin: 0 0.5rem;">›</span>
-    <a href="/izrabotka-na-sait.html">Услуги</a> <span style="margin: 0 0.5rem;">›</span>
-    <span style="color: var(--matrix-green-bright);">Калкулатор</span>
-  </nav>
-
   <article>
-    <h1 id="main-heading-calculator">Калкулатор за Изработка на Сайтове – Прозрачни Цени Без Изненади</h1>
+    <h1 id="main-heading-calculator">Калкулатор за Сайт с Ясна Цена и Следваща Стъпка</h1>
 
     <section aria-labelledby="main-heading-calculator">
 
       <div class="quick-answer">
-        <h2>Кратък отговор:</h2>
+        <h2>Кратък отговор: вземи цена и изпрати запитване</h2>
         <p>
-          Калкулаторът показва колко губиш от бавен сайт и колко спестяваш с HTML алтернатива.
+          Калкулаторът показва ясната цена за HTML сайт според обхват и функции.
           Поръчай изработка от 400€ за landing page до 1500€ за custom проекти с калкулатори.
         </p>
       </div>
 
+      <div class="tco-strip">
+        <p><strong>Бърза 5-годишна сметка:</strong></p>
+        <p>Пример: 400€ + 5×35€ = 575€ срещу 3 800€ WordPress.</p>
+        <p><a href="faq.html">Виж как е изчислено в ЧЗВ</a></p>
+      </div>
+
+      <section class="decision-links" aria-label="Проверка на твърдения">
+        <h2 style="border-left: none; padding-left: 0; margin-bottom: 0.8rem;">Провери твърденията преди решение</h2>
+        <p>Преди финална поръчка, мини през реалните източници:</p>
+        <ul>
+          <li><a href="dokazatelstva.html">Доказателства и методология</a></li>
+          <li><a href="case-studies.html">Case studies с реални проекти</a></li>
+          <li><a href="pagespeed-100-html.html">Как се постига висок PageSpeed</a></li>
+          <li><a href="faq.html">ЧЗВ за цена, риск и поддръжка</a></li>
+        </ul>
+      </section>
+
       <p>
-        <strong>Знаеш ли колко ти струва бавният сайт?</strong> Всяка секунда забавяне губи 7% от клиентите ти.
-        <strong>Какво ще кажеш да видиш точната цена на професионален сайт?</strong>
+        <strong>Ако искаш яснота, започни от точната цена.</strong> Виж как обхватът и функциите променят офертата и какво получаваш срещу нея.
       </p>
 
       <p>
-        <strong>Търсиш изработка на сайт без скрити такси?</strong> С HTML сайтове плащаш веднъж и забравяш.
-        Никакви хостинг такси, никакви абонаменти. <strong>Чиста цена от 400€.</strong>
+        <strong>Търсиш изработка на сайт без скрити такси?</strong> С HTML сайтове плащаш веднъж и знаеш точния обхват на проекта.
+        <strong>Чиста цена от 400€.</strong>
       </p>
 
       <p>
@@ -683,15 +754,15 @@
       <div class="grid">
         <div class="card">
           <h3>Визитка Сайт</h3>
-          <p>Проста страница с информация за бизнеса. Точна цена без изненади. От 400€.</p>
+          <p>Проста страница с информация за бизнеса. Точна цена без изненади. От 400 €.</p>
         </div>
         <div class="card">
           <h3>Корпоративен Сайт</h3>
-          <p>Многостраничен сайт с услуги и контакти. Прозрачни цени. От 1000€.</p>
+          <p>Многостраничен сайт с услуги и контакти. Прозрачни цени. От 1,000 €.</p>
         </div>
         <div class="card">
           <h3>Custom Project</h3>
-          <p>Специализирани проекти с индивидуални функционалности. Multi-language, калкулатори, сложна логика. От 1500€.</p>
+          <p>Специализирани проекти с индивидуални функционалности. Multi-language, калкулатори, сложна логика. От 1,500 €.</p>
           <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;"><em>Примери: multi-location архитектура, review системи, JavaScript интеграции.</em></p>
         </div>
       </div>
@@ -704,7 +775,7 @@
     </section>
 
     <section>
-      <h2>Как Изработваме HTML Сайтове</h2>
+      <h2>Как Превръщаме Офертата в Готов Сайт</h2>
       <div class="quick-answer">
         <p>
           <strong>Процесът на изработка:</strong>
@@ -723,7 +794,7 @@
     </section>
 
     <section>
-      <h2>Колко струва изработка на сайт през 2026?</h2>
+      <h2>Как Се Формира Цената През 2026?</h2>
 
       <p>
         Цената за изработка на сайт в България в този калкулатор започва от 400€ за визитка,
@@ -737,7 +808,7 @@
     </section>
 
     <section>
-      <h2>Конфигурирай Своя Сайт</h2>
+      <h2>Избери Какво Трябва на Бизнеса Ти</h2>
 
       <div class="calculator">
         <div class="calc-input">
@@ -788,26 +859,22 @@
       <div class="price-display">
         <div class="price" id="total-price">1000€</div>
         <div class="currency">EUR</div>
-        <div class="bg-price" id="bg-price">Годишни разходи след изработка: 23-48€/год</div>
-      </div>
+              </div>
 
-      <div class="quick-answer" id="share-result">
-        <p>
-          <strong>Сподели резултата си:</strong>
-          <a href="#" id="copy-share-link">Копирай линк</a>
-          <span id="copy-feedback" style="margin-left:0.5rem;"></span>
-        </p>
-        <p id="share-url" style="word-break: break-all;"></p>
+      <div class="call-to-action">
+        Искаш сайт, който да носи повече запитвания?
+        Изпрати кратко запитване и получи ясна оферта.
+        <a href="/index.html#contact">Изпрати запитване</a>
       </div>
 
       <div class="call-to-action" id="dynamic-cta">
-        <p id="cta-message">Искаш да спреш загубите? Поръчай сайт с 100/100 PageSpeed.</p>
-        <a href="/index.html#contact" id="cta-link">Започни сега</a>
+        <p id="cta-message">Искаш сайт, който да носи повече запитвания? Изпрати кратко запитване.</p>
+        <a href="/index.html#contact" id="cta-link">Изпрати запитване</a>
       </div>
     </section>
 
     <section>
-      <h2>HTML vs WordPress - Разлика в Цената</h2>
+      <h2>HTML срещу WordPress в Дългосрочния Разход</h2>
 
       <ul>
         <li>HTML сайт: 400€ - 1500€ (еднократно според обхвата)</li>
@@ -823,7 +890,7 @@
     </section>
 
     <section>
-      <h2>Защо HTML Сайтове Са По-Евтини</h2>
+      <h2>Защо HTML Често е По-Изгоден</h2>
 
       <p>
         WordPress агенции продават "пакети" с хостинг, домейн, плъгини. 
@@ -831,7 +898,7 @@
       </p>
 
       <div class="pill-choice">
-        <a href="/#contact" class="pill red-pill">Поръчай сега</a>
+        <a href="/index.html#contact" class="pill red-pill">Изпрати запитване</a>
         <a href="/dokazatelstva.html" class="pill blue-pill">Виж доказателства</a>
       </div>
     </section>
@@ -876,7 +943,8 @@
     <a href="/dokazatelstva.html">Доказателства</a> | 
     <a href="/about.html">За Нас</a> | 
     <a href="/#contact">Контакт</a> | 
-    <a href="/blog/">Блог</a> | 
+    <a href="/izrabotka-na-landing-page.html">Изработка на landing page</a> | 
+    <a href="/izrabotka-na-sait-sofia.html">Изработка на сайтове София</a> | 
     <a href="/llms-full.txt">AI Documentation (llms-full.txt)</a>
   </p>
 </footer>
@@ -893,63 +961,8 @@
   const contactCheckbox = document.getElementById('contact');
   const totalPrice = document.getElementById('total-price');
   const bgPrice = document.getElementById('bg-price');
-  const priceDisplay = document.querySelector('.price-display');
-  const shareUrl = document.getElementById('share-url');
-  const copyShareLink = document.getElementById('copy-share-link');
-  const copyFeedback = document.getElementById('copy-feedback');
-  const ctaMessage = document.getElementById('cta-message');
-  const ctaLink = document.getElementById('cta-link');
 
-  function buildShareUrl(price) {
-    const url = new URL(window.location.href);
-    url.searchParams.set('design', designSelect.value);
-    url.searchParams.set('pages', pagesSlider.value);
-    url.searchParams.set('seo', seoCheckbox.checked ? '1' : '0');
-    url.searchParams.set('multilocation', multilocationCheckbox.checked ? '1' : '0');
-    url.searchParams.set('calculator', calculatorCheckbox.checked ? '1' : '0');
-    url.searchParams.set('multilang', multilangCheckbox.checked ? '1' : '0');
-    url.searchParams.set('price', String(price));
-    return url.toString();
-  }
-
-  function updateCta(price) {
-    if (price < 800) {
-      ctaMessage.textContent = 'Стартов проект с ясен бюджет.';
-      ctaLink.textContent = 'Започни с визитка';
-      return;
-    }
-
-    if (price < 1500) {
-      ctaMessage.textContent = 'Солиден бизнес сайт с баланс цена/стойност.';
-      ctaLink.textContent = 'Вземи оферта';
-      return;
-    }
-
-    ctaMessage.textContent = 'Custom проект с по-сложни изисквания.';
-    ctaLink.textContent = 'Говори с експерт';
-  }
-
-  function applyParamsFromUrl() {
-    const params = new URLSearchParams(window.location.search);
-    const design = params.get('design');
-    const pages = parseInt(params.get('pages'), 10);
-
-    if (design && ['simple', 'medium', 'complex'].includes(design)) {
-      designSelect.value = design;
-    }
-
-    if (!Number.isNaN(pages) && pages >= 1 && pages <= 20) {
-      pagesSlider.value = String(pages);
-      pagesValue.textContent = String(pages);
-    }
-
-    seoCheckbox.checked = params.get('seo') === '1';
-    multilocationCheckbox.checked = params.get('multilocation') === '1';
-    calculatorCheckbox.checked = params.get('calculator') === '1';
-    multilangCheckbox.checked = params.get('multilang') === '1';
-  }
-
-  function calculatePrice(scrollToResult = false) {
+  function calculatePrice() {
     let price = 0;
 
     // Base price from design
@@ -981,41 +994,7 @@
 
     // Update display
     totalPrice.textContent = price + '€';
-    bgPrice.textContent = 'Годишни разходи след изработка: 23-48€/год';
-
-    if (price > 1200) {
-      totalPrice.style.color = '#ff4444';
-    } else {
-      totalPrice.style.color = 'var(--matrix-green-bright)';
-    }
-
-    const currentShareUrl = buildShareUrl(price);
-    shareUrl.textContent = currentShareUrl;
-    copyShareLink.setAttribute('href', currentShareUrl);
-    localStorage.setItem('calculator_last_price_eur', String(price));
-    localStorage.setItem('calculator_last_share_url', currentShareUrl);
-
-    updateCta(price);
-
-    if (scrollToResult) {
-      priceDisplay.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  }
-
-  copyShareLink.addEventListener('click', function(e) {
-    e.preventDefault();
-    const url = shareUrl.textContent.trim();
-
-    if (!url) {
-      return;
-    }
-
-    navigator.clipboard.writeText(url).then(function() {
-      copyFeedback.textContent = 'Линкът е копиран.';
-    }).catch(function() {
-      copyFeedback.textContent = 'Копирай ръчно от линка по-долу.';
-    });
-  });
+      }
 
   // Event listeners
   pagesSlider.addEventListener('input', function() {
@@ -1023,15 +1002,14 @@
     calculatePrice();
   });
 
-  designSelect.addEventListener('change', function() { calculatePrice(true); });
-  seoCheckbox.addEventListener('change', function() { calculatePrice(true); });
-  multilocationCheckbox.addEventListener('change', function() { calculatePrice(true); });
-  calculatorCheckbox.addEventListener('change', function() { calculatePrice(true); });
-  multilangCheckbox.addEventListener('change', function() { calculatePrice(true); });
-  contactCheckbox.addEventListener('change', function() { calculatePrice(true); });
+  designSelect.addEventListener('change', calculatePrice);
+  seoCheckbox.addEventListener('change', calculatePrice);
+  multilocationCheckbox.addEventListener('change', calculatePrice);
+  calculatorCheckbox.addEventListener('change', calculatePrice);
+  multilangCheckbox.addEventListener('change', calculatePrice);
+  contactCheckbox.addEventListener('change', calculatePrice);
 
   // Initial calculation
-  applyParamsFromUrl();
   calculatePrice();
 </script>
 
